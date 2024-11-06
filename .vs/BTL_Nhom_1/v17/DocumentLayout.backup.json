@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|d:\\learning\\uneti\\nam_bon\\th_net\\code\\btl_nhom_1\\dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|d:\\learning\\uneti\\nam_bon\\th_net\\code\\btl_nhom_1\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC6BFD-7D01-4DCF-828A-DB45C55C01A2}|BTL_Nhom_1.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\DAO\\Database.cs",
+              "RelativeDocumentMoniker": "DAO\\Database.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\DAO\\Database.cs",
+              "RelativeToolTip": "DAO\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T12:56:11.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormOrder.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormOrder.cs",
+              "RelativeDocumentMoniker": "FormOrder.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormOrder.cs",
+              "RelativeToolTip": "FormOrder.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAUwG0BAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T07:47:23.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormLogin.cs",
+              "RelativeToolTip": "FormLogin.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:30:51.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormMain.cs",
+              "RelativeDocumentMoniker": "FormMain.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormMain.cs",
+              "RelativeToolTip": "FormMain.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAwwOMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:24:55.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormMain.cs",
+              "RelativeDocumentMoniker": "FormMain.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormMain.cs [Design]",
+              "RelativeToolTip": "FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:24:53.663Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "D:\\LEARNING\\Uneti\\NAM_BON\\TH_NET\\Code\\BTL_Nhom_1\\FormLogin.cs [Design]",
+              "RelativeToolTip": "FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:24:34.377Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
