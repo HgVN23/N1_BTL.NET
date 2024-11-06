@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NAMSAOrestaurant" Class="DbContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\mssqllocaldb;Initial Catalog=NAMSAOrestaurant;Integrated Security=True" SettingsObjectName="BTL_Nhom_1.Properties.Settings" SettingsPropertyName="NAMSAOrestaurantConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Role" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Employee_Account" Member="Employee" ThisKey="EmployeeId" OtherKey="ID" Type="Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Category_MenuItem" Member="MenuItems" ThisKey="ID" OtherKey="CategoryId" Type="MenuItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NumberPhone" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Customer_Order" Member="Orders" ThisKey="ID" OtherKey="CustomerId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DateBirthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NumberPhone" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Employee_Account" Member="Accounts" ThisKey="ID" OtherKey="EmployeeId" Type="Account" />
+      <Association Name="Employee_Order" Member="Orders" ThisKey="ID" OtherKey="EmployeeIdCreate" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Floor" Member="Floors">
+    <Type Name="Floor">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FloorName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="QuantityTable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Floor_Table" Member="Tables" ThisKey="ID" OtherKey="FloorId" Type="Table" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MenuItems" Member="MenuItems">
+    <Type Name="MenuItem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MenuItemName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CategoryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="MenuItem_OrderDetail" Member="OrderDetails" ThisKey="ID" OtherKey="ItemId" Type="OrderDetail" />
+      <Association Name="Category_MenuItem" Member="Category" ThisKey="CategoryId" OtherKey="ID" Type="Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TableId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EmployeeIdCreate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsCurrentOrder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Order_OrderDetail" Member="OrderDetails" ThisKey="ID" OtherKey="OrderId" Type="OrderDetail" />
+      <Association Name="Customer_Order" Member="Customer" ThisKey="CustomerId" OtherKey="ID" Type="Customer" IsForeignKey="true" />
+      <Association Name="Employee_Order" Member="Employee" ThisKey="EmployeeIdCreate" OtherKey="ID" Type="Employee" IsForeignKey="true" />
+      <Association Name="Table_Order" Member="Table" ThisKey="TableId" OtherKey="ID" Type="Table" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderDetails" Member="OrderDetails">
+    <Type Name="OrderDetail">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ItemId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Order_OrderDetail" Member="Order" ThisKey="OrderId" OtherKey="ID" Type="Order" IsForeignKey="true" />
+      <Association Name="MenuItem_OrderDetail" Member="MenuItem" ThisKey="ItemId" OtherKey="ID" Type="MenuItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Table]" Member="Tables">
+    <Type Name="Table">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FloorId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Table_Order" Member="Orders" ThisKey="ID" OtherKey="TableId" Type="Order" />
+      <Association Name="Floor_Table" Member="Floor" ThisKey="FloorId" OtherKey="ID" Type="Floor" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
