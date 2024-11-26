@@ -8,4 +8,4 @@
 > <br>Password: admin123
 
 > [!NOTE]
-> Khi mở Project cếu có Popup Guna.UI2 WinForms thì đợi thời gian ở góc phải trên đếm ngược hết rồi ấn x để tắt
+> Khi mở Project nếu có Popup Guna.UI2 WinForms thì đợi thời gian ở góc phải trên đếm ngược hết rồi ấn x để tắt
